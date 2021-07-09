@@ -5,6 +5,8 @@ import '../Components/styles/MisDatosEmprendedor.css'
 import { connect } from 'react-redux'
 import Plus from '../images/icons-sidebar/plus.svg'
 import axios from 'axios'
+import pp from '../images/icons-sidebar/pp.jpg'
+import camara from '../images/camera.svg'
 const strToken='xK8ti0TzA4NR6doTqiG4gP8RTq865FLjPJ15NOD2';
 const urlVerPerf = 'http://wortevcanvasjet.wortevqa.com/api/datosperfil/'
 //const imageUrl = 'http://wortevcanvasjet.wortevqa.com/cargarfoto';
@@ -18,7 +20,7 @@ class MisDatosEmprendedor extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            photo: Plus,
+            photo: pp,
             nickname: props.userName,
             correo: props.userEmail,
             nombre: '',
@@ -225,7 +227,8 @@ class MisDatosEmprendedor extends React.Component {
             <div className="row">
                 <div className="col-12 pp">
                     <div className="avatar">
-                            <label htmlFor="photo"><img className="input_image profile-picture" src={this.state.photo} alt="imagen"/></label>
+                            <img className="input_image profile-picture" src={this.state.photo} alt="imagen"/>
+                            <label className="subir-foto" htmlFor="photo"><img src={camara} alt="" /></label>
                             <input className="input_link" id="photo" type="file" name="photo" onChange={this.handleChangeImg}/>
                     </div>
                     <h2 className="name">{this.state.nickname}</h2>
