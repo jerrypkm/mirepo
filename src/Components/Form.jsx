@@ -7,7 +7,7 @@ import { registerRequest } from '../actions'
 import { loginRequest } from '../actions'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import PageLoading from './PageLoading'
+import PageLoading from './PageLoadingLanding'
 
 import axios from 'axios'
 const baseUrlReg =  'http://wortevcanvasjet.wortevqa.com/api/registrousuario';
