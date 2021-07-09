@@ -15,9 +15,9 @@ class AddModal extends React.Component{
                                 <div className="header-modal-img">
                                     <img src="icons/people.svg" alt=""/>
                                 </div>
-                                <div className="modal-date">fecha de publicación</div>  
+                                <div className="modal-date">{this.props.date}</div>  
                             </div>
-                            <div className="modal-desc">Lorem ipsum dolor sit amet consectetur!</div>
+                            <div className="modal-desc">{this.props.currentInfo}</div>
                             <textarea 
                                 className="modal-t_area t-border" 
                                 name="text"

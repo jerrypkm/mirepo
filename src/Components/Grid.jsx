@@ -16,6 +16,7 @@ class Grid extends React.Component {
         this.state = {
             currentlyModified: '',
             currentName: '',
+            currentInfo: '',
             loading: false,
             error: null,
             editing: false,
@@ -24,6 +25,7 @@ class Grid extends React.Component {
             title: this.props.title,
             editingBMC: this.props.editingBMC,
             data: this.props.gridData,
+            date: new Date().toLocaleString().split(' '),
         }
     }
 
@@ -34,31 +36,31 @@ class Grid extends React.Component {
     selectModal = (index) =>{
         switch (index){
             case 0:
-                this.setState({currentlyModified: 0, currentName: "Key Partners"})
+                this.setState({currentlyModified: 0, currentName: "Key Partners", currentInfo: "Define a tus proveedores y aliados para producir y entregar tu producto o servicio."})
             break
             case 1:
-                this.setState({currentlyModified: 1, currentName: "Key activities"})
+                this.setState({currentlyModified: 1, currentName: "Key activities", currentInfo: "Traza las tareas esenciales de tu proceso, desde los insumos hasta la comercialización."})
             break
             case 2:
-                this.setState({currentlyModified: 2, currentName: "Channels"})
+                this.setState({currentlyModified: 2, currentName: "Channels", currentInfo: "Cómo darás a conocer y entregarás tu producto o servicio."})
             break
             case 3:
-                this.setState({currentlyModified: 3, currentName: "Key resources"})
+                this.setState({currentlyModified: 3, currentName: "Key resources", currentInfo: "Describe los elementos indispensables para que funcione tu negocio."})
             break
             case 4:
-                this.setState({currentlyModified: 4, currentName: "Customer segments"})
+                this.setState({currentlyModified: 4, currentName: "Customer segments", currentInfo: "Describe los hábitos y características del cliente al que le vas a vender."})
             break
             case 5:
-                this.setState({currentlyModified: 5, currentName: "Customer relationships"})
+                this.setState({currentlyModified: 5, currentName: "Customer relationships", currentInfo: "Define cómo será tu comunicación e interacción con ellos."})
             break
             case 6:
-                this.setState({currentlyModified: 6, currentName: "Value prepositions"})
+                this.setState({currentlyModified: 6, currentName: "Value prepositions", currentInfo: "Escribe por qué los clientes te preferirían a ti."})
             break
             case 7:
-                this.setState({currentlyModified: 7, currentName: "Cost structure"})
+                this.setState({currentlyModified: 7, currentName: "Cost structure", currentInfo: "Enlista todos los gastos que harás para que tu negocio funcione."})
             break
             case 8:
-                this.setState({currentlyModified: 8, currentName: "Revenue streams"})
+                this.setState({currentlyModified: 8, currentName: "Revenue streams", currentInfo: "Explica las formas en que obtendrás ingresos."})
             break
             default:
                 this.setState({currentlyModified: null, currentName: ''})
@@ -513,7 +515,7 @@ class Grid extends React.Component {
         return  <React.Fragment>
             <div className="main-grid">
                 <div className="name-bcm">
-                    <input name="title" type="text" value={this.state.title} onChange={this.handleChange}/>
+                    <input style={{borderBottom:'2px solid #e20515'}} name="title" type="text" value={this.state.title} onChange={this.handleChange}/>
                 </div>
                 <div className="grid">
                     <div className="grid-item">
@@ -592,7 +594,7 @@ class Grid extends React.Component {
 
                     <div className="grid-item">
                         <div className="header-grid">
-                            <span>Customer segments</span>
+                            <span>Recursos clave</span>
                             <div className="header-grid-img">
                                 <img src="icons/user.svg" alt=""/>
                             </div>
@@ -611,7 +613,7 @@ class Grid extends React.Component {
 
                     <div className="grid-item">
                         <div className="header-grid">
-                            <span>Customer relationships</span>
+                            <span>Relaciones con el cliente</span>
                             <div className="header-grid-img">
                                 <img src="icons/user_tick.svg" alt=""/>
                             </div>
@@ -630,7 +632,7 @@ class Grid extends React.Component {
 
                     <div className="grid-item">
                         <div className="header-grid">
-                            <span>Value prepositions</span>
+                            <span>Propuestas de valor</span>
                             <div className="header-grid-img">
                                 <img src="icons/search.svg" alt=""/>
                             </div>
@@ -649,7 +651,7 @@ class Grid extends React.Component {
 
                     <div className="grid-item">
                         <div className="header-grid">
-                            <span>Cost structure</span>
+                            <span>Estructura de costos</span>
                             <div className="header-grid-img">
                                 <img src="icons/home.svg" alt=""/>
                             </div>
@@ -668,7 +670,7 @@ class Grid extends React.Component {
 
                     <div className="grid-item">
                         <div className="header-grid">
-                            <span>Revenue streams</span>
+                            <span>Fuentes de ingresos</span>
                             <div className="header-grid-img">
                                 <img src="icons/money.svg" alt=""/>
                             </div>
@@ -689,7 +691,9 @@ class Grid extends React.Component {
                     <button onClick={this.state.editingBMC ? this.handleUpdate : this.handleSave} className="btn-guardar-bcm">{this.state.editingBMC ? "ACTUALIZAR" : "PUBLICAR"}</button>
                 </div>
             </div>
-            <AddModal 
+            <AddModal
+            date={this.state.date[0]}
+            currentInfo={this.state.currentInfo} 
             currentName={this.state.currentName}
             text={this.state.text}
             onClick={this.handleClick}
