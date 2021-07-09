@@ -78,7 +78,7 @@ p{
 }
 
 .img{
-  width:50%;
+  width:70%;
   margin-left: -.5em;
 }
 
@@ -92,7 +92,7 @@ p{
 /*Phone*/
 @media (max-width: 412px) {
   .img{
-    width: 100%;
+    width: 130%;
   }
 }
 
@@ -110,7 +110,10 @@ p{
   height: 2em;
   margin-top: -25em;
   padding-left: 1em;
-  max-width: 260;
+  min-width: none;
+  max-width: 245px;
+  position: relative;
+  display: inline-block;
   
 }
 ::placeholder {
@@ -126,11 +129,24 @@ p{
   text-align: center;
   margin-top: .8em;
   font-size: 8pt;
-  color: #adadad;
+  color: #7a7979;
   font-size: 9pt;
+
 
   
 }
+
+
+/*Phone footer*/
+@media (max-width: 412px) {
+  .pfooterform{
+    padding-right:0;
+    color:#e20515;
+  }
+}
+
+
+
 
 /*Phone footer*/
 @media (max-width: 412px) {
@@ -141,8 +157,24 @@ p{
 .btn-form{
   align-items: center;
   text-align: center;
-  width:100%;
   border-radius: 0;
+  position: relative;
+    display: inline-block;
+    background-color: #e20515;
+
+}
+.btn-form:hover{
+  background-color:#212529 ;
+  border: none;
+  border-color: transparent;
+  text-shadow: none;
 
 }
 
+/*Phone footer*/
+@media (max-width: 412px) {
+ .btn-form{
+   max-width: 160px;
+   font-size: 8pt;
+ }
+}

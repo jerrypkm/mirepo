@@ -40,7 +40,7 @@ class Footer extends React.Component {
                   <p className="subsp">Suscríbete a nuestro a Newsletter:</p>
                   
                     <div className="Row">
-                      <div className="col-sm-12">
+                      <div className="col-12">
                       <input type="email" className="footerform" placeholder="E-mail"></input>
                       <p className="pfooterform">Escribe tu e-mail</p>
                       <button type="button" className="btn btn-danger btn-form">Quiero más noticias</button>
