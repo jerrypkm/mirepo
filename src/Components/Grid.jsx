@@ -36,31 +36,31 @@ class Grid extends React.Component {
     selectModal = (index) =>{
         switch (index){
             case 0:
-                this.setState({currentlyModified: 0, currentName: "Key Partners", currentInfo: "Define a tus proveedores y aliados para producir y entregar tu producto o servicio."})
+                this.setState({currentlyModified: 0, currentName: "Socios clave", currentInfo: "Define a tus proveedores y aliados para producir y entregar tu producto o servicio."})
             break
             case 1:
-                this.setState({currentlyModified: 1, currentName: "Key activities", currentInfo: "Traza las tareas esenciales de tu proceso, desde los insumos hasta la comercialización."})
+                this.setState({currentlyModified: 1, currentName: "Actividades calve", currentInfo: "Traza las tareas esenciales de tu proceso, desde los insumos hasta la comercialización."})
             break
             case 2:
-                this.setState({currentlyModified: 2, currentName: "Channels", currentInfo: "Cómo darás a conocer y entregarás tu producto o servicio."})
+                this.setState({currentlyModified: 2, currentName: "Canales", currentInfo: "Cómo darás a conocer y entregarás tu producto o servicio."})
             break
             case 3:
-                this.setState({currentlyModified: 3, currentName: "Key resources", currentInfo: "Describe los elementos indispensables para que funcione tu negocio."})
+                this.setState({currentlyModified: 3, currentName: "Recursos clave   ", currentInfo: "Describe los elementos indispensables para que funcione tu negocio."})
             break
             case 4:
-                this.setState({currentlyModified: 4, currentName: "Customer segments", currentInfo: "Describe los hábitos y características del cliente al que le vas a vender."})
+                this.setState({currentlyModified: 4, currentName: "Segmento de clientes", currentInfo: "Describe los hábitos y características del cliente al que le vas a vender."})
             break
             case 5:
-                this.setState({currentlyModified: 5, currentName: "Customer relationships", currentInfo: "Define cómo será tu comunicación e interacción con ellos."})
+                this.setState({currentlyModified: 5, currentName: "Relaciones con el cliente", currentInfo: "Define cómo será tu comunicación e interacción con ellos."})
             break
             case 6:
-                this.setState({currentlyModified: 6, currentName: "Value prepositions", currentInfo: "Escribe por qué los clientes te preferirían a ti."})
+                this.setState({currentlyModified: 6, currentName: "Propuestas de valor", currentInfo: "Escribe por qué los clientes te preferirían a ti."})
             break
             case 7:
-                this.setState({currentlyModified: 7, currentName: "Cost structure", currentInfo: "Enlista todos los gastos que harás para que tu negocio funcione."})
+                this.setState({currentlyModified: 7, currentName: "Estructura de costos", currentInfo: "Enlista todos los gastos que harás para que tu negocio funcione."})
             break
             case 8:
-                this.setState({currentlyModified: 8, currentName: "Revenue streams", currentInfo: "Explica las formas en que obtendrás ingresos."})
+                this.setState({currentlyModified: 8, currentName: "Fuente de ingresos", currentInfo: "Explica las formas en que obtendrás ingresos."})
             break
             default:
                 this.setState({currentlyModified: null, currentName: ''})
@@ -151,17 +151,16 @@ class Grid extends React.Component {
         e.preventDefault();
         this.setState({loading: true});
         if(this.state.editing === true){
-            console.log("estas editando");
+            console.log("estas editando"+this.state.currentlyModified);
             let items = [];
             let item = {};
             switch(this.state.currentlyModified){
                 case 0:
                     items = [...this.state.data.keyPartners]
-                    console.log(items);
+                    console.log(this.state.text);
                     for (var i = 0; i < items.length; i++){
                         item = items[i];
-                        console.log(item);
-                        if (item.id === this.state.editingID){
+                        if (item.id == this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             console.log(items);
@@ -173,7 +172,7 @@ class Grid extends React.Component {
                     items = [...this.state.data.keyActivities]
                     for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id === this.state.editingID){
+                        if (item.id == this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, keyActivities: items,},loading: false})
@@ -184,7 +183,7 @@ class Grid extends React.Component {
                     items = [...this.state.data.channels]
                     for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id === this.state.editingID){
+                        if (item.id == this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, channels: items,},loading: false})
@@ -195,7 +194,7 @@ class Grid extends React.Component {
                     items = [...this.state.data.keyResources]
                     for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id === this.state.editingID){
+                        if (item.id == this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, keyResources: items,},loading: false})
@@ -206,7 +205,7 @@ class Grid extends React.Component {
                     items = [...this.state.data.customerSegments]
                     for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id === this.state.editingID){
+                        if (item.id == this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, customerSegments: items,},loading: false})
@@ -217,7 +216,7 @@ class Grid extends React.Component {
                     items = [...this.state.data.customerRelationships]
                     for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id === this.state.editingID){
+                        if (item.id == this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, customerRelationships: items,},loading: false})
@@ -228,7 +227,7 @@ class Grid extends React.Component {
                     items = [...this.state.data.valuePrepositions]
                     for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id === this.state.editingID){
+                        if (item.id == this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, valuePrepositions: items,},loading: false})
@@ -239,7 +238,7 @@ class Grid extends React.Component {
                     items = [...this.state.data.costStructure]
                     for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id === this.state.editingID){
+                        if (item.id == this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, costStructure: items,},loading: false})
@@ -250,7 +249,7 @@ class Grid extends React.Component {
                     items = [...this.state.data.revenueStreams]
                     for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id === this.state.editingID){
+                        if (item.id == this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, revenueStreams: items,},loading: false})
@@ -420,12 +419,14 @@ class Grid extends React.Component {
         let items = [];
         let id=element.getAttribute("name");
         let value=element.getAttribute("value");
+        // console.log(id);
+        // console.log(value);
         this.setState({editing: true, editingID: id, currentlyModified: index});
-        switch(index){
+        switch(index){  
             case 0:
                 items = [...this.state.data.keyPartners]
                 for (var i = 0; i < items.length; i++){
-                    if (id === parseInt(id)){
+                    if (i === parseInt(id)){
                         this.setState({text: value});   
                     }
                 }
@@ -433,7 +434,7 @@ class Grid extends React.Component {
             case 1:
                 items = [...this.state.data.keyActivities]
                 for (i = 0; i < items.length; i++){
-                    if (id === parseInt(id)){
+                    if (i === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
@@ -441,7 +442,7 @@ class Grid extends React.Component {
             case 2:
                 items = [...this.state.data.channels]
                 for (i = 0; i < items.length; i++){
-                    if (id === parseInt(id)){
+                    if (i === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
@@ -449,7 +450,7 @@ class Grid extends React.Component {
             case 3:
                 items = [...this.state.data.keyResources]
                 for (i = 0; i < items.length; i++){
-                    if (id === parseInt(id)){
+                    if (i === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
@@ -457,7 +458,7 @@ class Grid extends React.Component {
             case 4:
                 items = [...this.state.data.customerSegments]
                 for (i = 0; i < items.length; i++){
-                    if (id === parseInt(id)){
+                    if (i === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
@@ -465,7 +466,7 @@ class Grid extends React.Component {
             case 5:
                 items = [...this.state.data.customerRelationships]
                 for (i = 0; i < items.length; i++){
-                    if (id === parseInt(id)){
+                    if (i === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
@@ -473,7 +474,7 @@ class Grid extends React.Component {
             case 6:
                 items = [...this.state.data.valuePrepositions]
                 for (i = 0; i < items.length; i++){
-                    if (id === parseInt(id)){
+                    if (i === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
@@ -481,7 +482,7 @@ class Grid extends React.Component {
             case 7:
                 items = [...this.state.data.costStructure]
                 for (i = 0; i < items.length; i++){
-                    if (id === parseInt(id)){
+                    if (i === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
@@ -489,7 +490,7 @@ class Grid extends React.Component {
             case 8:
                 items = [...this.state.data.revenueStreams]
                 for (i = 0; i < items.length; i++){
-                    if (id === parseInt(id)){
+                    if (i === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
@@ -520,7 +521,7 @@ class Grid extends React.Component {
                 <div className="grid">
                     <div className="grid-item">
                         <div className="header-grid">
-                            <span>Segmento de clientes</span>
+                            <span>Socios clave</span>
                             <div className="header-grid-img">
                                 <img src="icons/people.svg" alt=""/>
                             </div>
@@ -538,7 +539,7 @@ class Grid extends React.Component {
                     </div>
                     <div className="grid-item">
                         <div className="header-grid">
-                            <span>Propuesta de valor</span>
+                            <span>Actividades clave</span>
                             <div className="header-grid-img">
                                 <img src="icons/agenda.svg" alt=""/>
                             </div>
@@ -575,7 +576,7 @@ class Grid extends React.Component {
 
                     <div className="grid-item">
                         <div className="header-grid">
-                            <span>Relaciones con los cliente</span>
+                            <span>Recursos clave</span>
                             <div className="header-grid-img">
                                 <img src="icons/puzz.svg" alt=""/>
                             </div>
@@ -594,7 +595,7 @@ class Grid extends React.Component {
 
                     <div className="grid-item">
                         <div className="header-grid">
-                            <span>Recursos clave</span>
+                            <span>Segmento de clientes</span>
                             <div className="header-grid-img">
                                 <img src="icons/user.svg" alt=""/>
                             </div>
