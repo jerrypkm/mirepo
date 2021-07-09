@@ -3,10 +3,6 @@ import './styles/Grid.css'
 
 class AddModal extends React.Component{
 
-    constructor(props){
-        super(props);
-    }
-
     render(){
         return <React.Fragment>
             <div className="modal fade" id="addModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >

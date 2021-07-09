@@ -154,7 +154,6 @@ class Dashboard extends React.Component {
             this.setState({
                 currentlyModified: '',
                 currentName: '',
-                loading: false,
                 error: null,
                 editingBMC: true,
                 editing: true,
@@ -162,9 +161,6 @@ class Dashboard extends React.Component {
                 text: '',
                 titleBMC: resultado.title,
                 metaBMC: meta,
-                gActive: false,
-                pActive: false,
-                iActive:false,
                 gridData: {
                     keyPartners:  
                         resultado.data.keyPartners

@@ -1,10 +1,6 @@
 import React from 'react'
 import createHistory from 'history/createBrowserHistory' 
 import { Link } from 'react-router-dom'
-import { connect } from 'react-redux'
-import { withRouter } from 'react-router-dom'
-import PageLoading from './PageLoading'
-import axios from 'axios'
 import './styles/NavBar.css'
 import pp from '../images/icons-sidebar/pp.jpg'
 
@@ -47,7 +43,7 @@ class NavBar extends React.Component{
                     <a className="nav-link flex" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <span className="profile-name">{this.props.formValues.nombre}</span>
                       <div className="profile-pic">
-                        <img src={localStorage.getItem('photo')} alt=""/>
+                        <img src={pp} alt=""/>
                       </div>
                     </a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
