@@ -22,8 +22,10 @@
   }
   .btn2{
     margin-left: 0px;
-    font-size: 8pt;
+    
   }
+
+
 }
 
 @media screen and (max-width: 650px) {

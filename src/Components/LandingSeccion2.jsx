@@ -39,7 +39,7 @@ class LandingSeccion2 extends React.Component {
                         <p className="pd2">La metodología que te permite crear y entregar valor con tu empresa.</p>
                         <Bounce>
                         <button onClick={this.scrollTop} className="btn2">
-                            Iniciar <span className="margin"> {`>`} </span>
+                            Iniciar 
                         </button>
                         </Bounce>
                         
