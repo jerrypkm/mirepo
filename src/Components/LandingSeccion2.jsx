@@ -41,7 +41,6 @@ class LandingSeccion2 extends React.Component {
                         <button onClick={this.scrollTop} className="btn2">
                             Iniciar <span className="margin"> {`>`} </span>
                         </button>
-
                         </Bounce>
                         
                     </div>
