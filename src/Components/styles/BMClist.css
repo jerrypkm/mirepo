@@ -22,3 +22,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.undo{
+    width: 50%;
+    filter:opacity(50%);
+}

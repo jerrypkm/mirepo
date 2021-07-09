@@ -2,6 +2,7 @@ import React from 'react'
 import del from '../images/delete.svg'
 import edit from '../images/edit.svg'
 import copy from '../images/copy.svg'
+import undo from '../images/undo.svg'
 import './styles/BMClist.css'
 import axios from 'axios'
 import { Redirect } from "react-router-dom";
@@ -57,7 +58,7 @@ class BMClist extends React.Component{
                          <h5 className="card-title break-word title-bmc">{this.props.titulo}</h5>                                
                             {isPaper ?
                                 <div className="card-text icons flex justify-content-end">
-                                    <button style={{color:"red", marginTop:"-5px"}} onClick={()=>this.handleclickrestorebmc(this.props.id_bmc)}>Restaurar</button>
+                                    <button className="svg-icons card-text" onClick={()=>this.handleclickrestorebmc(this.props.id_bmc)}><img className="undo" src={undo} alt=""/></button>
                                     <button className="svg-icons card-text" onClick={null}><img src={del} alt=""/></button>
                                 </div>
                                 
