@@ -233,62 +233,29 @@ class MisDatosEmprendedor extends React.Component {
                     <h4 className="instruccion">Ingresa tu información</h4> 
                 </div> 
                 <div className="col-md-6 text_center " >
-                    <p>Nickname:</p>
+                    <p className="titulop">Nickname:</p>
                     <div className="">
                         <input 
                         onChange={this.handleChange} 
                         type="text" 
-                        className="field-container-form"
+                        className="field-container-form text_center"
                         name="nickname"
                         value={this.state.nickname}/>
                     </div>
                 </div>
                 <div className="col-md-6 text_center ">
-                    <p>Correo:</p>
+                    <p className="titulop">Correo:</p>
                     <div className="">
                         <input
                         onChange={this.handleChange} 
                         type="email" 
-                        className="field-container-form"
+                        className="field-container-form text_center"
                         name="correo"
                         value={this.state.correo}/> 
                     </div>
                 </div>
                 <div className="col-md-6 text_center ">
-                    <p>Nombre:</p>
-                    <div className="">
-                        <input 
-                        onChange={this.handleChange}
-                        type="text" 
-                        className="field-container-form"
-                        name="nombre"
-                        value={this.state.nombre}/> 
-                    </div>
-                </div>
-                <div className="col-md-6 text_center ">
-                <p>Apellido Paterno:</p>
-                    <div className="">
-                        <input 
-                        onChange={this.handleChange}
-                        type="text" 
-                        className="field-container-form"
-                        name="apellidop"
-                        value={this.state.apellidop}/> 
-                    </div>  
-                </div>
-                <div className="col-md-6 text_center ">
-                <p>Apellido Materno:</p>
-                    <div className="">
-                        <input 
-                        onChange={this.handleChange}
-                        type="text" 
-                        className="field-container-form"
-                        name="apellidom"
-                        value={this.state.apellidom}/> 
-                    </div>  
-                </div>
-                <div className="col-md-6 text_center ">
-                <p>Fecha de nacimiento:</p>
+                <p className="titulop">Fecha de nacimiento:</p>
                     <fieldset className="cart_label uppercase semibold"/> 
                     <select id="day" name="day" className="select_day cart_select italic semibold" > 
                         <option value="" hidden >Día</option>
@@ -432,8 +399,52 @@ class MisDatosEmprendedor extends React.Component {
                         <option value="1930">1930</option>
                     </select> 
                 </div>
+
                 <div className="col-md-6 text_center ">
-                    <p>Ciudad o País de Residencia:</p>
+                    <p className="titulop">Nombre:</p>
+                    <div className="">
+                        <input 
+                        onChange={this.handleChange}
+                        type="text" 
+                        className="field-container-form text_center"
+                        name="nombre"
+                        value={this.state.nombre}/> 
+                    </div>
+                </div>
+                <div className="col-md-6 text_center ">
+                <p className="titulop">Apellido Paterno:</p>
+                    <div className="">
+                        <input 
+                        onChange={this.handleChange}
+                        type="text" 
+                        className="field-container-form text_center"
+                        name="apellidop"
+                        value={this.state.apellidop}/> 
+                    </div>  
+                </div>
+                <div className="col-md-6 text_center ">
+                <p className="titulop">Apellido Materno:</p>
+                    <div className="">
+                        <input 
+                        onChange={this.handleChange}
+                        type="text" 
+                        className="field-container-form text_center"
+                        name="apellidom"
+                        value={this.state.apellidom}/> 
+                    </div>  
+                </div>
+
+                <div className="col-md-6 text_center ">
+                <p className="titulop">Giro o Industria</p>
+                <select name="ciudad" className="field-container-form text_center" >
+                    </select>
+                    
+                </div>
+
+
+
+                <div className="col-md-6 text_center ">
+                    <p className="titulop">País de Residencia:</p>
                     <select name="pais" className="field-container-form text_center" onChange={(val) =>  this.handleChangeCity(val.target.value)} value={this.state.pais}>
                         <option></option>
                         {this.state.country.countries.map(function(d){
@@ -442,8 +453,10 @@ class MisDatosEmprendedor extends React.Component {
                             )
                         })}
                     </select> 
-                    <br />
-                    <select name="ciudad" className="field-container-form text_center" onChange={this.handleChange} value={this.state.ciudad}>
+                    <br>
+                    </br>
+                    <p className="titulop">Ciudad de Residencia:</p>
+                <select name="ciudad" className="field-container-form text_center" onChange={this.handleChange} value={this.state.ciudad}>
                         {this.state.citi.data.map(function(d){
                             if(d.id){
                                 return(
@@ -452,10 +465,16 @@ class MisDatosEmprendedor extends React.Component {
                             }
                         })}
                     </select>
+                 
                 </div>
+
+               
+              
+
+               
                 <div className="col-md-2"></div>
                 <div className="col-md-8">
-                    <h4 className="instruccion2">Cuéntanos de tu proyecto o empresa </h4>
+                    <h4 className="instruccion2">¿Cómo te enteraste de este curso?</h4>
                     <input 
                     type="text" 
                     className="field-container2" 
