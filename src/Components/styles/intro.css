@@ -12,8 +12,10 @@
 
 .main-info{
     max-width: 77em;
-    overflow: scroll;
-    max-height: 43em;  
+    /*overflow: scroll;*/
+    max-height: 43em;
+    position: relative;
+    left: 20%;
 }
 
 .cabecera{
@@ -38,7 +40,8 @@
 .tips{
     padding: 2.5em;
     margin-left: 1em;
-    
+
+  
 
 }
 .titulos{

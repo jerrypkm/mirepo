@@ -4,12 +4,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
 
 .main-grid {
+  position: relative;
+  left: 4%;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   min-height: 80vh;
-  width: 1500px;
+  width: 1400px;
 }
 
 .grid {
@@ -19,7 +21,7 @@
   padding: 1em;
   min-height: 650px;
 }
-
+yar
 .grid-item {
   padding: 1em;
   display: flex;

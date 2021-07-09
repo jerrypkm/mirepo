@@ -1,6 +1,33 @@
 .main-bmc{
-  max-width: 1000px;
+  max-width: 1024px;
 }
+
+
+/*ipad pro*/
+@media (max-width: 1024px) {
+  .main-bmc{
+    max-width: 80%;
+  }
+}
+
+
+/*Tablet*/
+@media (max-width: 800px) {
+  .main-bmc{
+    max-width: 85%;
+  }
+}
+
+/*Phone*/
+@media (max-width: 415px) {
+  .main-bmc{
+    max-width:85% ;
+    padding-left: 3em;
+  }
+}
+
+
+
 
 .titulo {
   font-size: 3em;

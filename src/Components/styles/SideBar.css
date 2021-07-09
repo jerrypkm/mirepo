@@ -18,7 +18,42 @@
   color: #fff;
   height: calc(109vh - 62px);
   width: 300px;
+  position: fixed;
+  z-index: 1;
+  
 }
+
+/*ipad pro*/
+@media (max-width: 1024px) {
+  .sidebar{
+    height: 100%;
+  }
+}
+
+
+/*Tablet*/
+@media (max-width: 800px) {
+  .sidebar{
+    height: 100%;
+  }
+}
+
+/*Phone*/
+@media (max-width: 412px) {
+  .sidebar{
+    height: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 .sidebar .nav-link {
   opacity: 0.4;
