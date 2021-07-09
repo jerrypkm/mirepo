@@ -3,6 +3,10 @@
 /*font rules */
 /* font-family: 'Montserrat', sans-serif;  */
 
+.bg{
+  background-color: #CCCCCC;
+}
+
 .masterClass {
   font-family: "Montserrat", sans-serif;
 }
@@ -24,10 +28,20 @@
 
 .card {
   background-color: #ffffff;
-  height: 120em;
+  height: 95em;
   margin: 1em;
   top: -3em;
 }
+
+/*Phone*/
+@media (max-width: 412px) {
+  .card{
+    height: 140em;
+  }
+}
+
+
+
 
 .colum {
   text-align: center;
@@ -111,6 +125,7 @@ p {
   width: 10em;
 }
 
+
 .input_link {
   display: none;
 }
@@ -132,3 +147,31 @@ p {
   color: #000000;
   margin-bottom: 1.5em;
 }
+
+.instruccion3{
+text-align: right;
+font-size: 300;
+margin-top: -2em;
+font-size: 14pt;
+
+
+}
+
+/*Phone*/
+@media (max-width: 412px) {
+  .instruccion3{
+    text-align: center;
+    font-size: 10pt;
+  }
+   
+  }
+
+
+/*Tablet*/
+@media (max-width: 800px) {
+  .instruccion3{
+    text-align: center;
+    font-size: 10pt;
+  }
+}
+

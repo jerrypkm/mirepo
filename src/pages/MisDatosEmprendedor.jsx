@@ -213,7 +213,8 @@ class MisDatosEmprendedor extends React.Component {
     render(){
         return <React.Fragment>
         {/* Backgroun image */}
-        <div className="container-fluid">
+        <div className="bg">
+<div className="container-fluid">
             <div className="row">
                 <div className="col-12 fluid imagen"> 
                 </div>
@@ -481,8 +482,10 @@ class MisDatosEmprendedor extends React.Component {
                     onChange={this.handleChange}
                     name="proy_descripcion"
                     value={this.state.proy_descripcion}/> 
+                    <p className="instruccion3 ">Máximo 200 caracteres</p>
                 </div>
                 {/* save btn */}
+                
             </div>
                 <div className="row colum"> 
                     <div className="col-sm-8"></div>
@@ -493,6 +496,9 @@ class MisDatosEmprendedor extends React.Component {
                     </div>
                 </div>
         </div>
+
+        </div>
+    
         </React.Fragment>
     }
 }
