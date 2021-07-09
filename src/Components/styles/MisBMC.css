@@ -1,0 +1,45 @@
+.main-bmc{
+  max-width: 1000px;
+}
+
+.titulo {
+  font-size: 3em;
+  color: #5a5a5a;
+  font-weight: bold;
+  padding: 0.5em;
+}
+.crear {
+  font-weight: 300;
+  font-size: 1em;
+  text-align: right;
+  padding: 2em;
+}
+
+.card-bmc {
+  height: 10px !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: 2px solid lightgray;
+}
+
+.card-bmc h5 {
+  margin-bottom: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  color: red;
+  border-style: solid 2spx #000;
+  text-align: right;
+  border-top: 3px solid red;
+}
+
+.delete-all{
+  width: 200px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}

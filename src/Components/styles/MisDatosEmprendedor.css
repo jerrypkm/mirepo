@@ -1,0 +1,114 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+/*font rules */
+/* font-family: 'Montserrat', sans-serif;  */
+
+.masterClass {
+  font-family: "Montserrat", sans-serif;
+}
+
+.imagen {
+  color: blanchedalmond;
+  background-image: url("../../images/bg_header.png");
+  height: 14rem;
+}
+
+.card {
+  background-color: #ffffff;
+  height: 70em;
+  margin: 1em;
+  top: -3em;
+}
+
+.colum {
+  text-align: center;
+}
+
+/*perfil picture*/
+
+.avatar {
+  background-color: #e5e5e5;
+  height: 8em;
+  width: 8em;
+  border-radius: 100%;
+  text-align: center;
+  margin: auto;
+  margin-top: -4em;
+  box-shadow: 2px 3px 11px #a3a2a2;
+}
+
+.name {
+  color: #3c4858;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 1.5em;
+  font-weight: bold;
+}
+
+.instruccion {
+  color: #3c4858;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1em;
+  font-weight: 900;
+  margin-bottom: 4em;
+}
+
+.text_center {
+  text-align: center;
+}
+
+p {
+  color: 000000;
+  font-size: 0.9em;
+}
+
+.field-container-form {
+  background-color: #ffffff;
+  border-radius: none;
+  width: 18em;
+  border-style: none;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 3.5em;
+  padding: 0px;
+  outline: none;
+}
+
+.field-container2 {
+  background-color: #ffffff;
+  border-radius: none;
+  width: 100%;
+  border-style: none;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 2.5em;
+  outline: none;
+  padding: 1em;
+}
+
+.instruccion2 {
+  text-align: left;
+  font-size: 1.3em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+
+.btnsave {
+  margin-top: 1em;
+  background-color: red;
+  border-radius: 0%;
+  border: none;
+  width: 10em;
+}
+
+.input_link {
+  display: none;
+}
+
+.input_image {
+  max-width: 8em;
+}
+
+.una{
+  display: flex;
+}

@@ -1,0 +1,148 @@
+.footer-main{
+  margin-top: -1em;
+}
+.father{
+background-color:#dadada;
+text-decoration: none;
+padding: 5em;
+}
+
+
+.logo_1{
+  width: 280px;
+  padding-left: 2em;
+  margin-left: -5em;;
+  
+  margin-bottom: 2em;
+
+  
+}
+
+
+.border_left{
+  border-left: .8px solid #c7c7c7;
+
+}
+
+.consulta{
+list-style: none;
+text-decoration: none !important;
+position: relative;
+display: inline;
+top: -1.5em;
+
+
+
+ 
+}
+
+h5{
+  color: #6b6b6b;
+
+  
+}
+
+li{
+  list-style-type: none;
+  text-align: left;
+}
+a{
+  text-decoration: none !important;
+  color: #3c3c3c;
+  
+}
+a:hover{
+  color: #e20515;
+}
+
+
+
+p{
+  color: #3c3c3c;;
+}
+
+.leyenda{
+  background-color: #350004 ;
+  text-align: center;
+  padding: 2.5em;
+  padding-bottom: 0%;
+  
+
+}
+
+.white{
+  color: #f7f2f2;
+}
+.min{
+  font-size: 10pt;
+}
+
+.img{
+  width:50%;
+  margin-left: -.5em;
+}
+
+/*Tablet*/
+@media (max-width: 800px) {
+  .img{
+    width: 100%;
+  }
+}
+
+/*Phone*/
+@media (max-width: 412px) {
+  .img{
+    width: 100%;
+  }
+}
+
+.subsp{
+  padding-top: .5em;
+  
+  color: #000000;
+  font-weight: 400;
+
+
+
+}
+
+.footerform{
+  height: 2em;
+  margin-top: -25em;
+  padding-left: 1em;
+  max-width: 260;
+  
+}
+::placeholder {
+  
+  color: #000000;
+
+}
+
+.pfooterform{
+  margin-left: auto;
+  margin-right: auto;
+  padding-right:10em;
+  text-align: center;
+  margin-top: .8em;
+  font-size: 8pt;
+  color: #adadad;
+  font-size: 9pt;
+
+  
+}
+
+/*Phone footer*/
+@media (max-width: 412px) {
+  .footerform{
+    width: 150%;
+  }
+}
+.btn-form{
+  align-items: center;
+  text-align: center;
+  width:100%;
+  border-radius: 0;
+
+}
+

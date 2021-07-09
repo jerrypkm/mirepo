@@ -1,0 +1,68 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+/*font rules */
+/* font-family: 'Montserrat', sans-serif;  */
+
+* {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sidebar {
+  background-color: #3c3c3c;
+  color: #fff;
+  height: calc(109vh - 62px);
+  width: 300px;
+}
+
+.sidebar .nav-link {
+  opacity: 0.4;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+/*style onclick "active" */
+.sidebar .nav-link .active {
+  opacity: 1;
+  background-color: #515151;
+  border-left: 2px solid #e20515;
+}
+
+.sidebar .nav-link span {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.material-icons {
+  color: #fff;
+}
+
+.sidebar-title {
+  text-align: center;
+  padding: 46px 0px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+}
+
+.nav-side {
+  height: 60%;
+  justify-content: center;
+}
+
+.nav-side .nav-link:nth-child(2) {
+  flex-grow: 1;
+}
+
+.btn-p {
+  background: transparent;
+  border: none;
+  width: 15px;
+  margin-left: 15px;
+}

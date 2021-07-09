@@ -1,0 +1,45 @@
+.seccion-1 {
+  background-color: #ffffff;
+}
+
+.copys-container {
+  align-items: center;
+  text-align: left;
+  margin-top: 250px;
+  margin-left: 100px;
+  margin-right: 3em;
+  padding-right: 2em;
+}
+
+.texto-inicio {
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  letter-spacing: 2.5px;
+  line-height: 1;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: -1px;
+  opacity: 0.6;
+}
+
+.seccion-form {
+  height: 800px;
+  background-image: url("../../images/vector.svg");
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-position: center;
+}

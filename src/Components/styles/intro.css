@@ -1,0 +1,108 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/*font rules */
+/* font-family: 'Montserrat', sans-serif;  */
+
+*{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.main-info{
+    max-width: 77em;
+    overflow: scroll;
+    max-height: 43em;  
+}
+
+.cabecera{
+    background-color:#E20515;
+    color:#ffff;
+    text-align: center;
+    font-weight: bold;
+    padding: .5em;
+    width: 100%;
+}
+
+.p1{
+    padding: 3.5em;
+    font-size: 14pt;
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 1.5em;
+    line-height: 1.3;
+
+}
+
+.tips{
+    padding: 2.5em;
+    margin-left: 1em;
+    
+
+}
+.titulos{
+    font-size:27pt ;
+    font-weight: bold;
+    letter-spacing: -.5pt;
+
+}
+.espacio-tips{
+    margin-bottom: 3.5em;
+}
+.espacio-img{
+    margin-bottom: 2.5em;
+}
+.pt{
+    opacity: .9;
+    padding-right: 1em;
+}
+
+.enlace{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+}
+
+
+
+
+.enlace:hover{
+    text-decoration: none;
+    color: #000;
+}
+
+.img_ejemplo{
+align-items: center;
+width: 95%;
+}
+.ilustration{
+align-items: center;
+width: 95%;
+max-width: 280px;
+
+
+}
+
+.banner{
+    background-color: #E5E743;
+    padding: 4em 4em 0;
+    padding-top: 1.5em;
+}
+
+.banner-contain{
+    padding-right: 4em;
+    padding-left: 4em;
+}
+
+.titulo-banner{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+@media (max-width: 500px){
+    .banner{
+        padding: 2em 2em 0;
+    }
+}

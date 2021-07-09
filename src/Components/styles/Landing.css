@@ -1,0 +1,23 @@
+/*Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden
+}
+/*Import fonts: */
+
+/* Anton */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+/* Montserrat*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* Rules Montserrat
+  font-family: 'Montserrat', sans-serif; */
