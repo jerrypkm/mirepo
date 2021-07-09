@@ -7,9 +7,17 @@
   text-align: left;
   margin-top: 250px;
   margin-left: 100px;
-  margin-right: 3em;
+  margin-right: 2em;
   padding-right: 2em;
 }
+
+/*Phone footer*/
+@media (max-width: 412px) {
+  .copys-container{
+   
+  }
+  }
+
 
 .texto-inicio {
   font-family: "Anton", sans-serif;
@@ -19,6 +27,18 @@
   line-height: 1;
 }
 
+/*Phone footer*/
+@media (max-width: 412px) {
+  .texto-inicio{
+    font-size: 26px !important;
+    
+   
+  }
+  }
+
+
+
+
 h1 {
   font-family: "Anton", sans-serif;
   font-weight: bold;
@@ -26,6 +46,28 @@ h1 {
   letter-spacing: 2.5px;
   line-height: 1;
 }
+
+/*Phone footer*/
+@media (max-width: 412px) {
+  h1{
+text-align: start;
+margin-right: 400px !important;
+    
+   
+  }
+  }
+
+  /*Phone footer*/
+@media (max-width: 412px) {
+  h2{
+    font-size: 20px !important;
+    
+    
+   
+  }
+  }
+
+
 
 h2 {
   font-family: "Montserrat", sans-serif;

@@ -141,7 +141,7 @@ p{
 @media (max-width: 412px) {
   .pfooterform{
     padding-right:0;
-    color:#e20515;
+  
   }
 }
 
@@ -168,6 +168,7 @@ p{
   border: none;
   border-color: transparent;
   text-shadow: none;
+  outline: none;
 
 }
 
@@ -176,5 +177,6 @@ p{
  .btn-form{
    max-width: 160px;
    font-size: 8pt;
+   outline: none;
  }
 }
