@@ -17,7 +17,6 @@ class BMC extends React.Component{
                 form: {
                     nombre: '',
                     apellido: '',
-                    userID: '', 
                     userID: localStorage.getItem('userID'),
                 }
             }

@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useRef } from 'react';
 import Lottie from 'lottie-web';
 import './styles/PageLoading.css';
-import Loader from './Loader.jsx';
+//import Loader from './Loader.jsx';
 
 function PageLoading() {
   const container = useRef(null);

@@ -148,7 +148,7 @@ class Grid extends React.Component {
     handleClick = e => {
         e.preventDefault();
         this.setState({loading: true});
-        if(this.state.editing == true){
+        if(this.state.editing === true){
             console.log("estas editando");
             let items = [];
             let item = {};
@@ -159,7 +159,7 @@ class Grid extends React.Component {
                     for (var i = 0; i < items.length; i++){
                         item = items[i];
                         console.log(item);
-                        if (item.id == this.state.editingID){
+                        if (item.id === this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             console.log(items);
@@ -169,9 +169,9 @@ class Grid extends React.Component {
                 break
                 case 1:
                     items = [...this.state.data.keyActivities]
-                    for (var i = 0; i < items.length; i++){
+                    for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id == this.state.editingID){
+                        if (item.id === this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, keyActivities: items,},loading: false})
@@ -180,9 +180,9 @@ class Grid extends React.Component {
                 break
                 case 2:
                     items = [...this.state.data.channels]
-                    for (var i = 0; i < items.length; i++){
+                    for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id == this.state.editingID){
+                        if (item.id === this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, channels: items,},loading: false})
@@ -191,9 +191,9 @@ class Grid extends React.Component {
                 break
                 case 3:
                     items = [...this.state.data.keyResources]
-                    for (var i = 0; i < items.length; i++){
+                    for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id == this.state.editingID){
+                        if (item.id === this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, keyResources: items,},loading: false})
@@ -202,9 +202,9 @@ class Grid extends React.Component {
                 break
                 case 4:
                     items = [...this.state.data.customerSegments]
-                    for (var i = 0; i < items.length; i++){
+                    for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id == this.state.editingID){
+                        if (item.id === this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, customerSegments: items,},loading: false})
@@ -213,9 +213,9 @@ class Grid extends React.Component {
                 break
                 case 5:
                     items = [...this.state.data.customerRelationships]
-                    for (var i = 0; i < items.length; i++){
+                    for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id == this.state.editingID){
+                        if (item.id === this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, customerRelationships: items,},loading: false})
@@ -224,9 +224,9 @@ class Grid extends React.Component {
                 break
                 case 6:
                     items = [...this.state.data.valuePrepositions]
-                    for (var i = 0; i < items.length; i++){
+                    for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id == this.state.editingID){
+                        if (item.id === this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, valuePrepositions: items,},loading: false})
@@ -235,9 +235,9 @@ class Grid extends React.Component {
                 break
                 case 7:
                     items = [...this.state.data.costStructure]
-                    for (var i = 0; i < items.length; i++){
+                    for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id == this.state.editingID){
+                        if (item.id === this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, costStructure: items,},loading: false})
@@ -246,9 +246,9 @@ class Grid extends React.Component {
                 break
                 case 8:
                     items = [...this.state.data.revenueStreams]
-                    for (var i = 0; i < items.length; i++){
+                    for (i = 0; i < items.length; i++){
                         item = items[i];
-                        if (item.id == this.state.editingID){
+                        if (item.id === this.state.editingID){
                             item.text=this.state.text;
                             items[i] = item;
                             this.setState({data: {...this.state.data, revenueStreams: items,},loading: false})
@@ -423,71 +423,71 @@ class Grid extends React.Component {
             case 0:
                 items = [...this.state.data.keyPartners]
                 for (var i = 0; i < items.length; i++){
-                    if (id == parseInt(id)){
+                    if (id === parseInt(id)){
                         this.setState({text: value});   
                     }
                 }
             break
             case 1:
                 items = [...this.state.data.keyActivities]
-                for (var i = 0; i < items.length; i++){
-                    if (id == parseInt(id)){
+                for (i = 0; i < items.length; i++){
+                    if (id === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
             break
             case 2:
                 items = [...this.state.data.channels]
-                for (var i = 0; i < items.length; i++){
-                    if (id == parseInt(id)){
+                for (i = 0; i < items.length; i++){
+                    if (id === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
             break
             case 3:
                 items = [...this.state.data.keyResources]
-                for (var i = 0; i < items.length; i++){
-                    if (id == parseInt(id)){
+                for (i = 0; i < items.length; i++){
+                    if (id === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
             break
             case 4:
                 items = [...this.state.data.customerSegments]
-                for (var i = 0; i < items.length; i++){
-                    if (id == parseInt(id)){
+                for (i = 0; i < items.length; i++){
+                    if (id === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
             break
             case 5:
                 items = [...this.state.data.customerRelationships]
-                for (var i = 0; i < items.length; i++){
-                    if (id == parseInt(id)){
+                for (i = 0; i < items.length; i++){
+                    if (id === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
             break
             case 6:
                 items = [...this.state.data.valuePrepositions]
-                for (var i = 0; i < items.length; i++){
-                    if (id == parseInt(id)){
+                for (i = 0; i < items.length; i++){
+                    if (id === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
             break
             case 7:
                 items = [...this.state.data.costStructure]
-                for (var i = 0; i < items.length; i++){
-                    if (id == parseInt(id)){
+                for (i = 0; i < items.length; i++){
+                    if (id === parseInt(id)){
                         this.setState({text: value});
                     }
                 }
             break
             case 8:
                 items = [...this.state.data.revenueStreams]
-                for (var i = 0; i < items.length; i++){
-                    if (id == parseInt(id)){
+                for (i = 0; i < items.length; i++){
+                    if (id === parseInt(id)){
                         this.setState({text: value});
                     }
                 }

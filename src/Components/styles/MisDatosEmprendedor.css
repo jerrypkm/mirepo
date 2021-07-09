@@ -13,6 +13,15 @@
   height: 14rem;
 }
 
+.profile-picture {
+  overflow: hidden;
+  border-radius: 100%;
+  width: 8em;
+  height: 8em;
+  border: 2px double;
+  border-color: #dfe0eb;
+}
+
 .card {
   background-color: #ffffff;
   height: 70em;

@@ -32,7 +32,7 @@ class MisBMC extends React.Component{
             }
         })
         .then(response => {
-            if(response.data.success == true){
+            if(response.data.success === true){
                 window.location="/";
             }
             else{
@@ -55,7 +55,7 @@ class MisBMC extends React.Component{
             }
         })
         .then(response => {
-            if(response.data.success == true){
+            if(response.data.success === true){
                 window.location="/";
             }
             else{
